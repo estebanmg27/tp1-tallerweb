@@ -18,8 +18,16 @@ public class Comuna {
 	private String nombre;
 	@OneToMany
 	private List<Barrio>barrios=new ArrayList<Barrio>();
-	
-	public Long getId() {
+
+	public Comuna(){
+
+	}
+
+    public Comuna(String nombre) {
+		this.nombre = nombre;
+    }
+
+    public Long getId() {
 		return id;
 	}
 

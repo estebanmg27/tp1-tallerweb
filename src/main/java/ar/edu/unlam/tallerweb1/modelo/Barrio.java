@@ -15,12 +15,17 @@ public class Barrio {
 	private String nombre;
 	@ManyToOne
 	private Comuna comuna;
-	
+
+	public Barrio () {}
+
 	public Barrio (String nombre) {
 		this.nombre=nombre;
 	}
-	
-	public Barrio () {}
+
+	public Barrio (String nombre, Comuna comuna) {
+		this.nombre=nombre;
+		this.comuna = comuna;
+	}
 	
 	public String getNombre() {
 		return nombre;

@@ -34,6 +34,14 @@ public class Farmacia {
 		this.diaDeTurno=diaDeTurno;
 	}
 
+	public Farmacia (String nombre, String telefono, String diaDeTurno, Punto geoLocalizacion, Direccion direccion) {
+		this.nombre=nombre;
+		this.telefono=telefono;
+		this.diaDeTurno=diaDeTurno;
+		this.geoLocalizacion = geoLocalizacion;
+		this.direccion = direccion;
+	}
+
 	public Long getId() {
 		return id;
 	}
