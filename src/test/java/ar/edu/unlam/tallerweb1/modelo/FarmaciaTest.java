@@ -80,7 +80,6 @@ public class FarmaciaTest extends SpringTest {
 
     @Test
     @Transactional @Rollback()
-
     public void obtenerFarmaciasDeLaCalleInclan(){
         List<Farmacia> busqueda = session.createCriteria(Farmacia.class)
                 .createAlias("direccion", "tablaDireccion")

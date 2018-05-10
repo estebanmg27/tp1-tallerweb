@@ -27,6 +27,10 @@ public class Farmacia {
 	public void setGeoLocalizacion(Punto geoLocalizacion) {
 		this.geoLocalizacion = geoLocalizacion;
 	}
+	
+	public Farmacia() {
+		
+	}
 
 	public Farmacia (String nombre, String telefono, String diaDeTurno) {
 		this.nombre=nombre;
